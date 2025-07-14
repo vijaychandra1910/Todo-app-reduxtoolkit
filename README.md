@@ -1,17 +1,72 @@
-<<<<<<< HEAD
-# React + Vite
+# Todo App with Redux Toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo application built with React and Redux Toolkit.  
+It allows users to add and remove todos, demonstrating state management using Redux Toolkit.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new todos
+- Remove existing todos
+- State management with Redux Toolkit
+- Styled with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Todo-app-reduxtoolkit
-This is Todo App using react, redux
->>>>>>> ea711d623b757a62400cee18830db1733d5d99c6
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/vijaychandra1910/Todo-app-reduxtoolkit.git
+   cd Todo-app-reduxtoolkit
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser and visit:**
+   ```
+   http://localhost:5173
+   ```
+
+## Project Structure
+
+```
+src/
+  app/
+    store.js           # Redux store setup
+  components/
+    AddTodo.jsx        # Component to add todos
+    Todos.jsx          # Component to display and remove todos
+  features/
+    todo/
+      todoSlice.js     # Redux slice for todos
+  App.jsx              # Main app component
+  main.jsx             # Entry point
+```
+
+## Technologies Used
+
+- React
+- Redux Toolkit
+- Tailwind CSS
+- Vite
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
